@@ -1,0 +1,262 @@
+{
+  "mock_inputs": [
+    {
+      "input_id": "IN-001",
+      "store": {
+        "store_id": 143,
+        "location": "Stockholm",
+        "region": "North",
+        "manager": {
+          "name": "Anna Svensson",
+          "contact": "anna.svensson@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-88921",
+        "status": "delayed",
+        "delay_count": 2,
+        "expected_delivery": "2026-01-29",
+        "estimated_delivery": "2026-02-01",
+        "courier": {
+          "name": "Nordic Logistics",
+          "delivery_status": "missed"
+        }
+      },
+      "sales_context": { "sales_season": true },
+      "notification": {
+        "type": "shipment_delay",
+        "message_text": "Shipment delayed again. Shelves are empty.",
+        "timestamp": "2026-01-30T09:15:00Z"
+      }
+    },
+    {
+      "input_id": "IN-002",
+      "store": {
+        "store_id": 87,
+        "location": "Gothenburg",
+        "region": "West",
+        "manager": {
+          "name": "Jonas Lind",
+          "contact": "jonas.lind@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-77109",
+        "status": "out_for_delivery",
+        "courier": {
+          "name": "DHL",
+          "delivery_status": "on_track"
+        }
+      },
+      "sales_context": { "sales_season": false },
+      "notification": {
+        "type": "status_check",
+        "message_text": "Confirm delivery timing.",
+        "timestamp": "2026-01-30T10:02:00Z"
+      }
+    },
+    {
+      "input_id": "IN-003",
+      "store": {
+        "store_id": 221,
+        "location": "Malmö",
+        "region": "South",
+        "manager": {
+          "name": "Sara Holm",
+          "contact": "sara.holm@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-55210",
+        "status": "delivered",
+        "courier": {
+          "name": "PostNord",
+          "delivery_status": "delivered"
+        }
+      },
+      "sales_context": { "sales_season": false },
+      "notification": {
+        "type": "delivery_confirmation",
+        "message_text": "Shipment received successfully.",
+        "timestamp": "2026-01-30T11:20:00Z"
+      }
+    },
+    {
+      "input_id": "IN-004",
+      "store": {
+        "store_id": 305,
+        "location": "Uppsala",
+        "region": "North",
+        "manager": {
+          "name": "Erik Nyström",
+          "contact": "erik.nystrom@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-99831",
+        "status": "lost",
+        "courier": {
+          "name": "FedEx",
+          "delivery_status": "lost"
+        }
+      },
+      "sales_context": { "sales_season": true },
+      "notification": {
+        "type": "shipment_exception",
+        "message_text": "Courier marked shipment as lost.",
+        "timestamp": "2026-01-30T12:05:00Z"
+      }
+    },
+    {
+      "input_id": "IN-005",
+      "store": {
+        "store_id": 412,
+        "location": "Västerås",
+        "region": "Central",
+        "manager": {
+          "name": "Linda Persson",
+          "contact": "linda.persson@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-66342",
+        "status": "partially_delivered",
+        "missing_items_count": 5,
+        "courier": {
+          "name": "Bring",
+          "delivery_status": "partial"
+        }
+      },
+      "sales_context": { "sales_season": true },
+      "notification": {
+        "type": "partial_delivery",
+        "message_text": "Some items missing from delivery.",
+        "timestamp": "2026-01-30T13:10:00Z"
+      }
+    },
+    {
+      "input_id": "IN-006",
+      "store": {
+        "store_id": 198,
+        "location": "Lund",
+        "region": "South",
+        "manager": {
+          "name": "Oskar Blom",
+          "contact": "oskar.blom@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-77411",
+        "status": "delivered",
+        "courier": {
+          "name": "UPS",
+          "delivery_status": "early"
+        }
+      },
+      "sales_context": { "sales_season": false },
+      "notification": {
+        "type": "early_delivery",
+        "message_text": "Shipment arrived earlier than expected.",
+        "timestamp": "2026-01-28T08:40:00Z"
+      }
+    },
+    {
+      "input_id": "IN-007",
+      "store": {
+        "store_id": 512,
+        "location": "Kiruna",
+        "region": "Far North",
+        "manager": {
+          "name": "Mikael Jönsson",
+          "contact": "mikael.jonsson@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-44590",
+        "status": "delayed",
+        "delay_reason": "weather",
+        "courier": {
+          "name": "PostNord",
+          "delivery_status": "delayed_weather"
+        }
+      },
+      "sales_context": { "sales_season": false },
+      "notification": {
+        "type": "external_delay",
+        "message_text": "Delivery delayed due to weather.",
+        "timestamp": "2026-01-30T14:30:00Z"
+      }
+    },
+    {
+      "input_id": "IN-008",
+      "store": {
+        "store_id": 601,
+        "location": "Örebro",
+        "region": "Central",
+        "manager": {
+          "name": "Emma Karlsson",
+          "contact": "emma.karlsson@storeco.com"
+        }
+      },
+      "shipment": null,
+      "sales_context": { "sales_season": true },
+      "notification": {
+        "type": "data_error",
+        "message_text": "Shipment reference missing.",
+        "timestamp": "2026-01-30T15:05:00Z"
+      }
+    },
+    {
+      "input_id": "IN-009",
+      "store": {
+        "store_id": 734,
+        "location": "Helsingborg",
+        "region": "South",
+        "manager": {
+          "name": "Daniel Fors",
+          "contact": "daniel.fors@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-33019",
+        "status": "in_transit",
+        "courier": {
+          "name": "DB Schenker",
+          "delivery_status": "rerouted"
+        }
+      },
+      "sales_context": { "sales_season": false },
+      "notification": {
+        "type": "courier_change",
+        "message_text": "Shipment reassigned to another courier.",
+        "timestamp": "2026-01-30T16:10:00Z"
+      }
+    },
+    {
+      "input_id": "IN-010",
+      "store": {
+        "store_id": 845,
+        "location": "Norrköping",
+        "region": "East",
+        "manager": {
+          "name": "Filip Andersson",
+          "contact": "filip.andersson@storeco.com"
+        }
+      },
+      "shipment": {
+        "shipment_id": "SHIP-90127",
+        "status": "delivered_damaged",
+        "courier": {
+          "name": "UPS",
+          "delivery_status": "damaged"
+        }
+      },
+      "sales_context": { "sales_season": true },
+      "notification": {
+        "type": "delivery_exception",
+        "message_text": "Shipment delivered with damage.",
+        "timestamp": "2026-01-30T17:00:00Z"
+      }
+    }
+  ]
+}
