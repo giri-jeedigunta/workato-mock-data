@@ -1,0 +1,22 @@
+{
+  "priorities": [
+    {
+      "id": "PRI_LOW",
+      "label": "Low",
+      "description": "No immediate business impact. Can be handled asynchronously.",
+      "sla_hours": 48
+    },
+    {
+      "id": "PRI_MEDIUM",
+      "label": "Medium",
+      "description": "Potential operational impact. Timely response required.",
+      "sla_hours": 12
+    },
+    {
+      "id": "PRI_URGENT",
+      "label": "Urgent",
+      "description": "High customer or revenue impact. Immediate action required.",
+      "sla_hours": 2
+    }
+  ]
+}
