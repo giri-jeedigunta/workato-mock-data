@@ -1,0 +1,19 @@
+{
+  "severity_levels": [
+    {
+      "id": "SEV_LOW",
+      "label": "Low",
+      "description": "Routine or informational event with no customer impact"
+    },
+    {
+      "id": "SEV_MEDIUM",
+      "label": "Medium",
+      "description": "Operational issue with limited or potential impact"
+    },
+    {
+      "id": "SEV_HIGH",
+      "label": "High",
+      "description": "Customer-facing issue, revenue loss, or brand risk"
+    }
+  ]
+}
