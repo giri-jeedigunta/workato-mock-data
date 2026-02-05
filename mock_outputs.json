@@ -1,0 +1,139 @@
+{
+  "mock_outputs": [
+    {
+      "input_id": "IN-001",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_NEGATIVE", "score": -0.82 },
+        "severity": { "id": "SEV_HIGH", "label": "High" },
+        "confidence": { "score": 0.62 },
+        "human_in_the_loop": { "required": true },
+        "action": { "id": "ACT_ESCALATE" },
+        "priority": { "id": "PRI_URGENT" },
+        "output": {
+          "notify_roles": ["regional_operations_manager", "supply_chain_team"],
+          "notes": "Repeated delays during sales season causing customer impact."
+        }
+      }
+    },
+    {
+      "input_id": "IN-002",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_NEUTRAL", "score": 0.05 },
+        "severity": { "id": "SEV_MEDIUM", "label": "Medium" },
+        "confidence": { "score": 0.88 },
+        "human_in_the_loop": { "required": false },
+        "action": { "id": "ACT_AUTO_RESOLVE" },
+        "priority": { "id": "PRI_MEDIUM" },
+        "output": {
+          "response_message": "Shipment SHIP-77109 is on track for delivery today."
+        }
+      }
+    },
+    {
+      "input_id": "IN-003",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_POSITIVE", "score": 0.71 },
+        "severity": { "id": "SEV_LOW", "label": "Low" },
+        "confidence": { "score": 0.91 },
+        "human_in_the_loop": { "required": false },
+        "action": { "id": "ACT_MONITOR" },
+        "priority": { "id": "PRI_LOW" },
+        "output": {
+          "notes": "Delivery completed successfully. No action required."
+        }
+      }
+    },
+    {
+      "input_id": "IN-004",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_NEGATIVE", "score": -0.74 },
+        "severity": { "id": "SEV_HIGH", "label": "High" },
+        "confidence": { "score": 0.66 },
+        "human_in_the_loop": { "required": true },
+        "action": { "id": "ACT_ESCALATE" },
+        "priority": { "id": "PRI_URGENT" },
+        "output": {
+          "notes": "Shipment lost during sales season. Immediate investigation required."
+        }
+      }
+    },
+    {
+      "input_id": "IN-005",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_NEGATIVE", "score": -0.51 },
+        "severity": { "id": "SEV_MEDIUM", "label": "Medium" },
+        "confidence": { "score": 0.73 },
+        "human_in_the_loop": { "required": false },
+        "action": { "id": "ACT_ESCALATE" },
+        "priority": { "id": "PRI_MEDIUM" },
+        "output": {
+          "notes": "Partial delivery detected. Missing items require follow-up."
+        }
+      }
+    },
+    {
+      "input_id": "IN-006",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_POSITIVE", "score": 0.62 },
+        "severity": { "id": "SEV_LOW", "label": "Low" },
+        "confidence": { "score": 0.93 },
+        "human_in_the_loop": { "required": false },
+        "action": { "id": "ACT_MONITOR" },
+        "priority": { "id": "PRI_LOW" }
+      }
+    },
+    {
+      "input_id": "IN-007",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_NEUTRAL", "score": -0.08 },
+        "severity": { "id": "SEV_MEDIUM", "label": "Medium" },
+        "confidence": { "score": 0.79 },
+        "human_in_the_loop": { "required": false },
+        "action": { "id": "ACT_AUTO_RESOLVE" },
+        "priority": { "id": "PRI_MEDIUM" },
+        "output": {
+          "response_message": "Delivery delayed due to weather. We will notify you of updates."
+        }
+      }
+    },
+    {
+      "input_id": "IN-008",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_NEGATIVE", "score": -0.44 },
+        "severity": { "id": "SEV_HIGH", "label": "High" },
+        "confidence": { "score": 0.38 },
+        "human_in_the_loop": { "required": false },
+        "action": { "id": "ACT_REQUEST_DETAILS" },
+        "priority": { "id": "PRI_MEDIUM" },
+        "output": {
+          "response_message": "Shipment details are missing. Please provide a shipment reference."
+        }
+      }
+    },
+    {
+      "input_id": "IN-009",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_NEUTRAL", "score": 0.02 },
+        "severity": { "id": "SEV_MEDIUM", "label": "Medium" },
+        "confidence": { "score": 0.81 },
+        "human_in_the_loop": { "required": false },
+        "action": { "id": "ACT_MONITOR" },
+        "priority": { "id": "PRI_MEDIUM" }
+      }
+    },
+    {
+      "input_id": "IN-010",
+      "agent_decision": {
+        "sentiment": { "id": "SENT_NEGATIVE", "score": -0.69 },
+        "severity": { "id": "SEV_HIGH", "label": "High" },
+        "confidence": { "score": 0.64 },
+        "human_in_the_loop": { "required": true },
+        "action": { "id": "ACT_ESCALATE" },
+        "priority": { "id": "PRI_URGENT" },
+        "output": {
+          "notes": "Damaged delivery during sales season. Immediate remediation required."
+        }
+      }
+    }
+  ]
+}
