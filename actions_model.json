@@ -1,0 +1,19 @@
+{
+  "actions": [
+    {
+      "id": "ACT_AUTO_RESOLVE",
+      "label": "Auto Resolve",
+      "description": "Respond automatically using system data"
+    },
+    {
+      "id": "ACT_ESCALATE",
+      "label": "Escalate",
+      "description": "Route to human decision-maker"
+    },
+    {
+      "id": "ACT_REQUEST_DETAILS",
+      "label": "Request Details",
+      "description": "Ask for missing or unclear information"
+    }
+  ]
+}
