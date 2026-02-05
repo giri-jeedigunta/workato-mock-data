@@ -1,0 +1,22 @@
+{
+  "sentiments": [
+    {
+      "id": "SENT_POSITIVE",
+      "label": "Positive",
+      "description": "Satisfied or appreciative tone",
+      "score_range": [0.4, 1.0]
+    },
+    {
+      "id": "SENT_NEUTRAL",
+      "label": "Neutral",
+      "description": "Informational or non-emotional tone",
+      "score_range": [-0.39, 0.39]
+    },
+    {
+      "id": "SENT_NEGATIVE",
+      "label": "Negative",
+      "description": "Frustration, anger, or dissatisfaction",
+      "score_range": [-1.0, -0.4]
+    }
+  ]
+}
